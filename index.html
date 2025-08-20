@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MeatLink – Direct from Farmers</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><span class="logo">🥩</span> MeatLink</div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#how">How it Works</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="signin.html" class="btn btn-secondary">Sign In</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Connecting <span class="txt-green">Rural Farmers</span> to <span class="txt-orange">Western Cape Buyers</span></h1>
+        <p>Bypass middlemen and sell your livestock & meat directly to resellers in the township market.</p>
+        <a href="signup.html" class="btn btn-primary">Become a Supplier</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/farmers.jpg" alt="Farmers with livestock" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container section-inner">
+      <div class="section-text">
+        <h2>About MeatLink</h2>
+        <p>MeatLink is a wholesale marketplace designed to give farmers a direct channel to buyers. We focus on bringing <strong>Eastern Cape farmers</strong> closer to <strong>Western Cape township markets</strong>.</p>
+      </div>
+      <div class="section-image">
+        <img src="assets/images/cows.jpg" alt="Cattle grazing" />
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="section alt">
+    <div class="container section-inner">
+      <div class="section-image">
+        <img src="assets/images/cold-truck.jpg" alt="Cold storage truck" />
+      </div>
+      <div class="section-text">
+        <h2>How It Works</h2>
+        <ol>
+          <li>Farmers register and list available meat stock.</li>
+          <li>Resellers place bulk orders directly from farmers.</li>
+          <li>Cold-storage transport ensures meat quality.</li>
+          <li>Payments are seamless and secure for all parties.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits" class="section">
+    <div class="container section-inner">
+      <div class="section-text">
+        <h2>Why Join?</h2>
+        <ul>
+          <li>🚜 Farmers keep more profit by avoiding middlemen.</li>
+          <li>🏪 Township buyers get affordable, fresh stock.</li>
+          <li>🚚 Cold-chain trucks guarantee freshness.</li>
+          <li>💳 Secure transactions with escrow-style payments.</li>
+        </ul>
+      </div>
+      <div class="section-image">
+        <img src="assets/images/meat-market.jpg" alt="Butchery meat display" />
+      </div>
+    </div>
+  </section>
+
+  <section id="signup" class="section alt">
+    <div class="container text-center">
+      <h2>Join MeatLink Today</h2>
+      <p>Are you a wholesale farmer in the Eastern Cape? Sign up now to access buyers across the Western Cape.</p>
+      <a href="signup.html" class="btn btn-primary">Sign Up as a Farmer</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> MeatLink</div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
+

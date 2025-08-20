@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeatLink – Dashboard</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/dashboard.js" defer></script>
+</head>
+<body class="dashboard-body">
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="sidebar-brand">🥩 MeatLink</div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="stock.html">My Stock</a>
+        <a href="orders.html">Orders</a>
+        <a href="transport.html">Transport</a>
+        <a href="profile.html">Profile</a>
+        <a href="index.html" id="logout">Logout</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="dashboard-header">
+        <h1 id="welcome"></h1>
+        <p>Manage your stock, orders, and deliveries here.</p>
+      </header>
+
+      <!-- Current Stock -->
+      <section class="dashboard-section">
+        <h2>📦 Current Stock</h2>
+        <table class="dashboard-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price (per kg)</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="stockTableBody"></tbody>
+        </table>
+      </section>
+
+      <!-- Add Stock -->
+      <section class="dashboard-section">
+        <h2>➕ Add New Stock</h2>
+        <form class="form" id="addStockForm" novalidate>
+          <div class="form-group">
+            <label for="item">Item</label>
+            <input type="text" id="item" placeholder="e.g., Beef, Chicken, Lamb" required>
+            <span class="error-message" id="itemError"></span>
+          </div>
+          <div class="form-group">
+            <label for="qty">Quantity (kg)</label>
+            <input type="number" id="qty" placeholder="e.g., 100" required>
+            <span class="error-message" id="qtyError"></span>
+          </div>
+          <div class="form-group">
+            <label for="price">Price (R per kg)</label>
+            <input type="number" id="price" placeholder="e.g., 85" required>
+            <span class="error-message" id="priceError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Add Stock</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+

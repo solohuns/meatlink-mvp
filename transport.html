@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeatLink – Transport</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/dashboard.js" defer></script>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="sidebar-brand"> MeatLink</div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="stock.html">My Stock</a>
+        <a href="orders.html">Orders</a>
+        <a href="transport.html" class="active">Transport</a>
+        <a href="profile.html">Profile</a>
+        <a href="index.html" id="logout">Logout</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="page-header">
+        <h1>Transport</h1>
+        <p>View and schedule deliveries.</p>
+      </header>
+
+      <!-- Transport Table -->
+      <section class="dashboard-section">
+        <h2>🚚 Current Transport</h2>
+        <table class="transport-table" id="transportTable">
+          <thead>
+            <tr>
+              <th>Transport ID</th>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Destination</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="transportTableBody"></tbody>
+        </table>
+      </section>
+
+      <!-- Add Transport -->
+      <section class="form-section">
+        <h2>➕ Schedule Transport</h2>
+        <form id="addTransportForm" novalidate>
+          <div class="form-group">
+            <label for="transportItem">Item</label>
+            <input type="text" id="transportItem" placeholder="e.g., Beef, Chicken">
+            <span class="validator-msg"></span>
+          </div>
+          <div class="form-group">
+            <label for="transportQty">Quantity</label>
+            <input type="number" id="transportQty" placeholder="e.g., 20">
+            <span class="validator-msg"></span>
+          </div>
+          <div class="form-group">
+            <label for="transportDest">Destination</label>
+            <input type="text" id="transportDest" placeholder="e.g., City Market">
+            <span class="validator-msg"></span>
+          </div>
+          <button type="submit">Schedule Transport</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+

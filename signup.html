@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up – MeatLink</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"> MeatLink</div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#how">How it Works</a></li>
+          <li><a href="index.html#benefits">Benefits</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="form-section">
+    <div class="container form-card">
+      <h2>Create Farmer Account</h2>
+      <form id="signupForm">
+        <label>Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter full name" required />
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+
+        <label>Phone</label>
+        <input type="tel" id="phone" placeholder="Enter phone number" required pattern="[0-9]{10}" />
+
+        <label>Farm Location</label>
+        <input type="text" id="location" placeholder="Enter farm location" required />
+
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Create password" required />
+
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="signin.html">Sign In</a></p>
+    </div>
+  </section>
+</body>
+</html>
+
+
+

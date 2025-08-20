@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeatLink – Orders</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/dashboard.js" defer></script>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="sidebar-brand"> MeatLink</div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="stock.html">My Stock</a>
+        <a href="orders.html" class="active">Orders</a>
+        <a href="transport.html">Transport</a>
+        <a href="profile.html">Profile</a>
+        <a href="index.html" id="logout">Logout</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="page-header">
+        <h1>Orders</h1>
+        <p>View and create orders.</p>
+      </header>
+
+      <!-- Orders Table -->
+      <section class="dashboard-section">
+        <h2>📦 Current Orders</h2>
+        <table class="orders-table" id="ordersTable">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price (R)</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="ordersTableBody"></tbody>
+        </table>
+      </section>
+
+      <!-- Add Order -->
+      <section class="form-section">
+        <h2>➕ Add New Order</h2>
+        <form id="addOrderForm" novalidate>
+          <div class="form-group">
+            <label for="orderItem">Item</label>
+            <input type="text" id="orderItem" placeholder="e.g., Beef, Chicken">
+            <span class="validator-msg"></span>
+          </div>
+          <div class="form-group">
+            <label for="orderQty">Quantity</label>
+            <input type="number" id="orderQty" placeholder="e.g., 10">
+            <span class="validator-msg"></span>
+          </div>
+          <div class="form-group">
+            <label for="orderPrice">Price</label>
+            <input type="number" id="orderPrice" placeholder="e.g., 500">
+            <span class="validator-msg"></span>
+          </div>
+          <button type="submit">Add Order</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
